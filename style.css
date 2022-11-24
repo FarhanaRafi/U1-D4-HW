@@ -32,7 +32,14 @@ body {
     width: 200px;
     margin-bottom: 10px;
     margin-left: 10px;
+    transform: translateY(70px);
+    transition: transform 300ms;
 
+}
+
+.search-card:hover .background {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .background-red {
@@ -49,7 +56,7 @@ body {
     transition: transform 300ms;
 }
 
-.background-red:hover {
+.search-card:hover .background-red {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -67,9 +74,6 @@ span {
 
 }
 
-.background-red:hover {
-    transform: scale(1.1);
-}
 
 
 .search-card_info a {
@@ -87,7 +91,9 @@ span {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+
 }
+
 
 .upload {
     position: absolute;
@@ -99,6 +105,13 @@ span {
     right: 0;
     margin-right: 102px;
     margin-bottom: 13px;
+    transform: translateY(70px);
+    transition: transform 300ms;
+}
+
+.search-card:hover .upload {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .upload-icon {
@@ -117,4 +130,11 @@ span {
     right: 0;
     margin-right: 28px;
     margin-bottom: 13px;
+    transform: translateY(70px);
+    transition: transform 300ms;
+}
+
+.search-card:hover .dotted {
+    opacity: 1;
+    transform: translateY(0px);
 }
